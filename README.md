@@ -31,7 +31,7 @@
 
 <img align="right" width="100" height="100" src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif">
 
-The **NDMC Voting System** is a comprehensive web-based application designed for Notre Dame of Midsayap College (NDMC) to conduct secure and efficient electronic voting for student elections. The system provides a dual-environment solution that works both offline (localhost development) and online (production hosting) with automatic environment detection.
+The **NDMC Voting System** is a comprehensive web-based app designed for the Student of Notre Dame of Midsayap College (NDMC) to conduct secure and efficient electronic voting for student elections.
 
 ### 🎯 Core Objectives
 - 🔒 **Secure** - Multi-layer security with session management
@@ -130,7 +130,7 @@ The **NDMC Voting System** is a comprehensive web-based application designed for
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/your-username/ndmc_voting_system.git
+git clone https://github.com/Kevenzyrelpascioles/ndmc_voting_system.git
 
 # 2️⃣ Move to your web server directory
 cp -r ndmc_voting_system /path/to/xampp/htdocs/
