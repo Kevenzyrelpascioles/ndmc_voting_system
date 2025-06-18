@@ -1,1 +1,9 @@
-
+*.php linguist-language=PHP
+admin/Worksheet.php linguist-vendored
+admin/Workbook.php linguist-vendored
+admin/Parser.php linguist-vendored
+admin/OLEwriter.php linguist-vendored
+admin/Format.php linguist-vendored
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
+*.sql linguist-language=SQL 
