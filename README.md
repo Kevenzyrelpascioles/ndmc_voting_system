@@ -180,7 +180,7 @@ Password: admin2
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ndmc_voting_system.git
+git clone https://github.com/Kevenzyrelpascioles/ndmc_voting_system.git
 
 # Navigate to the project
 cd ndmc_voting_system
@@ -201,22 +201,15 @@ cp -r . /opt/lampp/htdocs/ndmc_voting_system/
 1. Start Apache and MySQL from XAMPP Control Panel
 2. Open phpMyAdmin: `http://localhost/phpmyadmin`
 3. Create a new database named `ndmc_voting`
-4. Import `setup_localhost.sql`:
+4. Import `ndmc_voting_system`:
    - Click on the database
    - Go to "Import" tab
-   - Choose file: `setup_localhost.sql`
+   - Choose file: `ndmc_voting_system.sql`
    - Click "Go"
 
 </details>
 
-<details>
-<summary><b>3️⃣ Verify Installation</b></summary>
 
-1. Visit: `http://localhost/ndmc_voting_system/setup_localhost.php`
-2. Check all items show ✅ green checkmarks
-3. If any issues ❌, follow the troubleshooting guide
-
-</details>
 
 <details>
 <summary><b>4️⃣ Access the System</b></summary>
