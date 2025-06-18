@@ -200,7 +200,7 @@ cp -r . /opt/lampp/htdocs/ndmc_voting_system/
 
 1. Start Apache and MySQL from XAMPP Control Panel
 2. Open phpMyAdmin: `http://localhost/phpmyadmin`
-3. Create a new database named `ndmc_voting`
+3. Create a new database named `ndmc_voting_system`
 4. Import `ndmc_voting_system`:
    - Click on the database
    - Go to "Import" tab
