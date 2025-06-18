@@ -1,0 +1,350 @@
+/* Responsive CSS for NDMC Voting System */
+
+/* Base responsive rules */
+html, body {
+  overflow-x: hidden;
+  font-size: 16px; /* Base font size for rem calculations */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container adjustments */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Flexbox utility classes */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* Extra small devices (phones, less than 480px) */
+@media (max-width: 479px) {
+  html, body {
+    font-size: 14px;
+  }
+  
+  .navbar-fixed-top .brand h2 {
+    font-size: 16px !important;
+  }
+  
+  .chmsc_nav font {
+    font-size: 12px !important;
+  }
+  
+  .wrapper {
+    width: 100% !important;
+    margin: 70px auto 10px auto !important;
+    padding: 10px !important;
+  }
+  
+  .wrapper_admin {
+    width: 100% !important;
+    padding: 15px !important;
+  }
+  
+  .circle-logo {
+    max-width: 35px !important;
+    height: auto !important;
+  }
+  
+  .vote_wise, .vote_wise1 {
+    font-size: 18px !important;
+  }
+  
+  .form_wrapper {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  
+  .form_wrapper input[type="text"],
+  .form_wrapper input[type="password"] {
+    width: 85% !important;
+  }
+  
+  .ballot {
+    width: 100% !important;
+  }
+  
+  .modal {
+    width: 95% !important;
+  }
+  
+  /* Make candidate images smaller on very small screens */
+  [class*="col-"] img {
+    max-width: 60px !important;
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .wrapper {
+    width: 95% !important;
+    margin: 75px auto 10px auto !important;
+  }
+  
+  .navbar-fixed-top .brand h2 {
+    font-size: 18px !important;
+  }
+  
+  .chmsc_nav font {
+    font-size: 14px !important;
+  }
+  
+  .circle-logo {
+    max-width: 40px !important;
+    height: auto !important;
+  }
+  
+  .vote_wise, .vote_wise1 {
+    font-size: 20px !important;
+    text-align: center !important;
+    padding: 10px 0 !important;
+  }
+  
+  .helping ol {
+    font-size: 16px !important;
+    padding-left: 20px !important;
+  }
+  
+  .hero-body-voting {
+    padding: 10px !important;
+  }
+  
+  .ballot {
+    width: 95% !important;
+    margin: 0 auto !important;
+  }
+  
+  .cent {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .help, .back, .ok_vote {
+    text-align: center !important;
+    margin: 10px auto !important;
+    display: block !important;
+  }
+  
+  /* Make modal responsive */
+  .modal {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    width: 90% !important;
+    margin-top: 85px !important;
+  }
+  
+  .wrapper_admin {
+    width: 90% !important;
+  }
+  
+  .navbar-fixed-top .brand h2 {
+    font-size: 22px !important;
+  }
+  
+  .circle-logo {
+    max-width: 50px !important;
+  }
+  
+  .ballot {
+    width: 85% !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Adjust columns for tablet */
+  .col-md-3 {
+    width: 50% !important;
+    float: left !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapper {
+    width: 85% !important;
+    margin-top: 80px !important;
+  }
+  
+  .wrapper_admin {
+    width: 95% !important;
+  }
+}
+
+/* Fix navbar on mobile */
+@media (max-width: 767px) {
+  .navbar-fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+  }
+  
+  .navbar-fixed-top .container {
+    padding: 0 10px !important;
+  }
+  
+  body {
+    padding-top: 60px !important;
+  }
+  
+  /* Create mobile menu toggle */
+  .navbar-toggle {
+    display: block !important;
+    margin-right: 15px !important;
+    float: right !important;
+    border: none !important;
+    background: transparent !important;
+  }
+  
+  .navbar .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  
+  /* Form adjustments */
+  input[type="text"],
+  input[type="password"],
+  select,
+  .form-control {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Responsive Table */
+@media (max-width: 767px) {
+  .responsive-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+  
+  .responsive-table thead {
+    display: none !important;
+  }
+  
+  .responsive-table tbody,
+  .responsive-table tr,
+  .responsive-table td {
+    display: block !important;
+    width: 100% !important;
+  }
+  
+  .responsive-table tr {
+    margin-bottom: 15px !important;
+    border: 1px solid #ddd !important;
+  }
+  
+  .responsive-table td {
+    text-align: right !important;
+    padding: 8px !important;
+    position: relative !important;
+    border-bottom: 1px solid #eee !important;
+  }
+  
+  .responsive-table td:before {
+    content: attr(data-label) !important;
+    position: absolute !important;
+    left: 10px !important;
+    width: 45% !important;
+    font-weight: bold !important;
+    text-align: left !important;
+  }
+}
+
+/* Flex-based layout for candidates */
+.candidates-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 15px !important;
+  justify-content: center !important;
+}
+
+.candidate-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 150px !important;
+}
+
+@media (max-width: 767px) {
+  .candidate-item {
+    max-width: 120px !important;
+  }
+  
+  .button-group {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  
+  .button-group a, 
+  .button-group button {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* Card-based layout */
+.card {
+  background: #fff !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+  margin-bottom: 20px !important;
+  padding: 15px !important;
+}
+
+/* Sticky footer */
+html {
+  position: relative !important;
+  min-height: 100% !important;
+}
+
+body {
+  margin-bottom: 60px !important; /* Height of the footer */
+}
+
+.footer {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 60px !important;
+  background-color: #f5f5f5 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+} 
