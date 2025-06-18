@@ -1,0 +1,350 @@
+/* Green Theme for NDMC Voting System Admin
+   Matches the styling of the voting_progress.php page */
+
+:root {
+    --primary-green: #2E7D32;
+    --light-green: #4CAF50;
+    --pale-green: #E8F5E9;
+    --hover-green: #1B5E20;
+    --danger-red: #dc3545;
+    --danger-hover: #c82333;
+}
+
+body {
+    background: linear-gradient(135deg, var(--pale-green), #ffffff);
+    min-height: 100vh;
+}
+
+/* Navbar styling */
+.navbar-inner {
+    background: var(--primary-green) !important;
+    background-image: none !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+.navbar-inner .brand h2, 
+.navbar-inner .chmsc_nav,
+.navbar-inner .brand {
+    color: white !important;
+    text-shadow: none !important;
+}
+
+/* Button styling */
+.btn-success {
+    background-color: var(--light-green) !important;
+    background-image: none !important;
+    border-color: var(--primary-green) !important;
+    text-shadow: none !important;
+    border-radius: 25px !important;
+    padding: 5px 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-success:hover, 
+.btn-success:active {
+    background-color: var(--hover-green) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.btn-danger {
+    background-color: var(--danger-red) !important;
+    background-image: none !important;
+    border-color: var(--danger-hover) !important;
+    text-shadow: none !important;
+    border-radius: 25px !important;
+    padding: 5px 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-danger:hover, 
+.btn-danger:active {
+    background-color: var(--danger-hover) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.btn-info {
+    background-color: #0d6efd !important;
+    background-image: none !important;
+    border-color: #0a58ca !important;
+    text-shadow: none !important;
+    border-radius: 25px !important;
+    padding: 5px 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-info:hover, 
+.btn-info:active {
+    background-color: #0a58ca !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-green) !important;
+    background-image: none !important;
+    border-color: var(--hover-green) !important;
+    text-shadow: none !important;
+    border-radius: 25px !important;
+    padding: 5px 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover, 
+.btn-primary:active {
+    background-color: var(--hover-green) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* Dashboard container styling */
+.hero-body {
+    background: white !important;
+    border-radius: 15px !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05) !important;
+    padding: 2rem !important;
+    border: 1px solid rgba(76, 175, 80, 0.1) !important;
+    margin-top: 20px !important;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.thumbnail_gallery, .thumbnail_combined {
+    background: white !important;
+    border-radius: 15px !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05) !important;
+    padding: 1.5rem !important;
+    height: 100% !important;
+    border: 1px solid rgba(76, 175, 80, 0.1) !important;
+}
+
+.thumbnail_gallery h2, .thumbnail_combined h2 {
+    color: var(--primary-green) !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+.thumbnail_gallery h2:after, .thumbnail_combined h2:after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -5px !important;
+    left: 0 !important;
+    width: 60% !important;
+    height: 3px !important;
+    background: var(--light-green) !important;
+    border-radius: 2px !important;
+}
+
+/* Table styling */
+.table {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    border: none !important;
+    margin-top: 1.5rem !important;
+}
+
+.table thead {
+    background-color: var(--primary-green) !important;
+    color: white !important;
+}
+
+.table th {
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    font-size: 0.9rem !important;
+    padding: 1rem !important;
+}
+
+.table td {
+    padding: 0.8rem !important;
+    vertical-align: middle !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+}
+
+.table tbody tr:hover {
+    background-color: var(--pale-green) !important;
+    transition: background-color 0.3s ease !important;
+}
+
+/* Modal styling */
+.modal-content {
+    border-radius: 15px !important;
+    border: none !important;
+}
+
+.modal-header {
+    background: var(--primary-green) !important;
+    color: white !important;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1.5rem !important;
+}
+
+.modal-body {
+    padding: 2rem !important;
+    font-size: 1.1rem !important;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(0,0,0,0.1) !important;
+    padding: 1.5rem !important;
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 10px !important;
+    padding: 15px 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.alert-info {
+    background-color: rgba(13, 202, 240, 0.15) !important;
+    border-left: 4px solid #0dcaf0 !important;
+    color: #055160 !important;
+}
+
+/* Navigation pills */
+.nav-pills > li > a {
+    border-radius: 25px !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover {
+    background-color: var(--primary-green) !important;
+}
+
+.nav-pills > li > a:hover {
+    background-color: var(--pale-green) !important;
+    color: var(--primary-green) !important;
+}
+
+/* DataTables styling */
+div.dataTables_wrapper .ui-widget-header {
+    background: var(--primary-green) !important;
+    border: 1px solid var(--primary-green) !important;
+    color: white !important;
+    font-weight: normal !important;
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.dataTables_filter input, 
+.dataTables_length select {
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    padding: 5px 10px !important;
+}
+
+/* Pagination */
+.pagination ul > li > a {
+    color: var(--primary-green) !important;
+    transition: all 0.3s ease !important;
+}
+
+.pagination ul > li.active > a {
+    background-color: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+    color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    
+    .hero-body, 
+    .thumbnail_gallery, 
+    .thumbnail_combined {
+        padding: 1rem !important;
+    }
+}
+
+/* Canvassing Report Styling */
+.badge {
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    min-width: 40px;
+    background-color: var(--pale-green);
+    color: var(--primary-green);
+    border: 1px solid var(--light-green);
+}
+
+/* Additional table styling */
+.canvassing-table {
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    padding: 15px;
+    overflow: hidden;
+}
+
+/* Clear fix for floating elements */
+.clear-fix {
+    clear: both;
+    height: 20px;
+}
+
+/* Excel button styling */
+.excel-download-container {
+    float: right;
+    margin-bottom: 15px;
+}
+
+/* Position tabs styling */
+.position-tabs-container {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.position-tabs a {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: var(--primary-green);
+    display: inline-block;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+.position-tabs a.active,
+.position-tabs a:hover {
+    background-color: var(--hover-green);
+}
+
+/* Candidate photo styling */
+.pic {
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.pic:hover {
+    transform: scale(1.1);
+    border-color: var(--light-green);
+}
+
+/* Position title styling */
+.position-title {
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    border-top: 1px solid var(--hover-green);
+    border-bottom: 1px solid var(--hover-green);
+}

@@ -1,0 +1,417 @@
+/* Responsive CSS for NDMC Voting System Admin Area */
+
+/* Base responsive rules */
+html, body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Login button specific styling */
+.hero-body-index .btn-success, 
+.hero-body-index button[name="Login"] {
+  background-color: #4CAF50 !important;
+  background-image: none !important;
+  color: white !important;
+  border: 1px solid #3d8b40 !important;
+  padding: 10px !important;
+  font-weight: bold !important;
+  text-shadow: none !important;
+  border-radius: 4px !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  transition: background-color 0.3s !important;
+}
+
+.hero-body-index .btn-success:hover, 
+.hero-body-index button[name="Login"]:hover {
+  background-color: #3d8b40 !important;
+}
+
+/* Login form improvements */
+#element.hero-body-index {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+#element.hero-body-index input[type="text"],
+#element.hero-body-index input[type="password"] {
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 8px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin-bottom: 15px !important;
+  font-size: 16px !important;
+}
+
+#element.hero-body-index input[type="text"]:focus,
+#element.hero-body-index input[type="password"]:focus {
+  border-color: #4CAF50 !important;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5) !important;
+  outline: none !important;
+}
+
+/* Fix for admin wrapper */
+.wrapper_admin {
+  width: 100% !important;
+  max-width: 1300px !important;
+  padding: 15px !important;
+  box-sizing: border-box !important;
+  background-size: cover !important;
+}
+
+/* Space gallery responsive adjustments */
+#myGallery.spacegallery img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Admin dashboard cards */
+.thumbnail_gallery,
+.thumbnail_mission,
+.thumbnail_vission {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-bottom: 20px !important;
+}
+
+/* Nav pills responsive */
+.nav-pills {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.nav-pills > li {
+  float: none !important;
+  margin-bottom: 5px !important;
+}
+
+/* DataTables responsive */
+.dataTables_wrapper {
+  width: 100% !important;
+  overflow-x: auto !important;
+}
+
+/* Extra small devices (phones, less than 480px) */
+@media (max-width: 479px) {
+  html, body {
+    font-size: 14px;
+  }
+  
+  .navbar-fixed-top .brand h2 {
+    font-size: 16px !important;
+  }
+  
+  .chmsc_nav font {
+    font-size: 12px !important;
+  }
+  
+  .circle-logo {
+    max-width: 35px !important;
+    height: auto !important;
+  }
+  
+  .hero-unit-clock {
+    display: none !important; /* Hide clock on very small screens */
+  }
+  
+  .hero-body {
+    padding: 10px !important;
+  }
+  
+  /* Admin login form */
+  #element.hero-body-index {
+    width: 90% !important;
+    margin: 0 auto !important;
+    padding: 15px !important;
+  }
+  
+  #element.hero-body-index input[type="text"],
+  #element.hero-body-index input[type="password"] {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Space gallery needs more space reduction */
+  .spacegallery {
+    height: 180px !important;
+  }
+  
+  /* Hide some less important elements */
+  .top_date {
+    display: none !important;
+  }
+}
+
+/* Small devices (phones, 480px and up) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .navbar-fixed-top .brand h2 {
+    font-size: 18px !important;
+  }
+  
+  .chmsc_nav font {
+    font-size: 14px !important;
+  }
+  
+  .circle-logo {
+    max-width: 40px !important;
+    height: auto !important;
+  }
+  
+  /* Admin login form */
+  #element.hero-body-index {
+    width: 85% !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Adjust space gallery height */
+  .spacegallery {
+    height: 220px !important;
+  }
+  
+  /* Make form elements full width */
+  input[type="text"], 
+  input[type="password"],
+  select,
+  textarea,
+  .form-control {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper_admin {
+    width: 95% !important;
+  }
+  
+  .navbar-fixed-top .brand h2 {
+    font-size: 22px !important;
+  }
+  
+  .circle-logo {
+    max-width: 50px !important;
+  }
+  
+  /* Admin dashboard layout - 2 columns */
+  .thumbnail_gallery,
+  .thumbnail_mission,
+  .thumbnail_vission {
+    width: 48% !important;
+    float: left !important;
+    margin-right: 2% !important;
+  }
+  
+  .thumbnail_vission {
+    margin-right: 0 !important;
+    clear: right !important;
+  }
+  
+  /* Adjust space gallery height */
+  .spacegallery {
+    height: 300px !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapper_admin {
+    width: 95% !important;
+  }
+}
+
+/* Admin-specific table responsiveness */
+@media (max-width: 767px) {
+  /* DataTables responsive */
+  .dataTables_wrapper {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* Make all tables scrollable horizontally */
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  
+  /* Force table cells to be better sized */
+  .table-responsive > table {
+    margin-bottom: 0;
+  }
+  
+  /* Specific styling for candidate tables */
+  #candidate_list_table td,
+  #voter_list_table td {
+    min-width: 80px !important;
+  }
+  
+  /* Prevent text overflow in cells */
+  table td {
+    white-space: nowrap !important;
+  }
+  
+  /* Actions column always visible */
+  table td:last-child {
+    position: sticky !important;
+    right: 0 !important;
+    background-color: #f9f9f9 !important;
+    box-shadow: -2px 0px 5px rgba(0,0,0,0.1) !important;
+    z-index: 1 !important;
+  }
+  
+  /* Navbar adjustments */
+  .navbar-fixed-top {
+    position: relative !important;
+  }
+  
+  .navbar .container {
+    width: 100% !important;
+    padding: 0 15px !important;
+  }
+  
+  /* Fix navbar brand and text */
+  .navbar-fixed-top .brand {
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  /* Navigation pills stacked */
+  .nav-pills {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .nav-pills > li {
+    margin-bottom: 5px !important;
+  }
+  
+  .nav-pills > li > a {
+    text-align: center !important;
+  }
+  
+  /* Make buttons stretch full width */
+  .btn {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 5px !important;
+  }
+  
+  /* Fix for DataTables paging buttons */
+  .dataTables_paginate .ui-button {
+    padding: 5px 10px !important;
+    margin: 2px !important;
+  }
+}
+
+/* Admin dashboard responsive layout */
+@media (max-width: 767px) {
+  .home_body .navbar-inner .container {
+    padding: 0 !important;
+  }
+  
+  /* Admin mission, vision, etc layout */
+  #element.hero-body {
+    padding: 10px !important;
+  }
+  
+  .thumbnail_gallery,
+  .thumbnail_mission,
+  .thumbnail_vission {
+    width: 100% !important;
+    float: none !important;
+    margin-right: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  /* Improve buttons spacing */
+  .btn {
+    margin-bottom: 10px !important;
+  }
+  
+  /* Make modal content scrollable */
+  .modal-body {
+    max-height: 300px !important;
+    overflow-y: auto !important;
+  }
+}
+
+/* Fix for forms */
+@media (max-width: 767px) {
+  /* Form layouts */
+  form table {
+    width: 100% !important;
+  }
+  
+  form table tr td {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 5px 0 !important;
+  }
+  
+  /* Modal fixes */
+  .modal {
+    width: 95% !important;
+    margin: 0 auto !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  
+  /* Form wrappers */
+  .form_wrapper {
+    width: 95% !important;
+  }
+  
+  .form_wrapper input[type="text"],
+  .form_wrapper input[type="password"] {
+    width: 90% !important;
+  }
+}
+
+/* Admin login page */
+@media (max-width: 767px) {
+  #element.hero-body-index {
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 15px !important;
+  }
+  
+  #element.hero-body-index table {
+    width: 100% !important;
+  }
+  
+  #element.hero-body-index table tr td {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+  
+  #element.hero-body-index input[type="text"],
+  #element.hero-body-index input[type="password"] {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 5px 0 10px 0 !important;
+  }
+  
+  #element.hero-body-index button {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+} 

@@ -1,0 +1,837 @@
+/* Dashboard Specific Styling for NDMC Voting System */
+
+/* Main navigation menu */
+.navbar-inner {
+    padding: 0 20px !important;
+    border-radius: 0 !important;
+}
+
+/* Fix spacing for tabs and buttons */
+.nav.nav-pills {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 20px !important;
+    gap: 8px !important;
+}
+
+.nav.nav-pills > li {
+    margin: 0 !important;
+    flex: 0 0 auto !important;
+}
+
+.nav.nav-pills > li > a {
+    margin: 3px !important;
+    padding: 10px 15px !important;
+    border-radius: 4px !important;
+}
+
+/* Year tabs styling */
+.position-tabs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 20px !important;
+    gap: 5px !important;
+    width: 100% !important;
+    padding: 5px 0 !important;
+}
+
+.position-tabs a {
+    margin: 3px !important;
+    padding: 10px 15px !important;
+    background-color: #4CAF50 !important;
+    border: 1px solid #3d8b40 !important;
+    border-radius: 4px !important;
+    color: white !important;
+    text-decoration: none !important;
+    flex: 0 0 auto !important;
+    text-align: center !important;
+}
+
+.position-tabs a:hover,
+.position-tabs a.active {
+    background-color: #3d8b40 !important;
+    color: white !important;
+    border-color: #2d682f !important;
+}
+
+/* Additional class for the "All" button that shows as active by default */
+.position-tabs a.btn-primary,
+.position-tabs a:first-child {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-color: #3d8b40 !important;
+}
+
+/* Fix for 4th Year Representative tab */
+.position-tabs a[href*="4th"],
+#4th_Year_Representative {
+    clear: none !important;
+    float: none !important;
+    display: inline-block !important;
+    margin-right: 3px !important;
+}
+
+/* Add Candidates button styling and positioning */
+.add-candidates-btn,
+a[href*="add_candidate"] {
+    display: inline-block !important;
+    margin: 15px 0 !important;
+    clear: both !important;
+    float: none !important;
+    background-color: #4CAF50 !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 4px !important;
+    border: 1px solid #3d8b40 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    width: auto !important;
+    max-width: 220px !important;
+    font-weight: bold !important;
+}
+
+.add-candidates-btn:hover,
+a[href*="add_candidate"]:hover {
+    background-color: #449d44 !important;
+    border-color: #398439 !important;
+}
+
+/* Download Excel file button styling */
+.excel-download-btn,
+a[href*="excel"],
+a.btn-success[href*="excel"],
+button[onclick*="excel"] {
+    display: inline-block !important;
+    margin: 15px 0 !important;
+    clear: both !important;
+    float: none !important;
+    background-color: #5cb85c !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 4px !important;
+    border: 1px solid #4cae4c !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    width: auto !important;
+}
+
+.excel-download-btn:hover,
+a[href*="excel"]:hover,
+button[onclick*="excel"]:hover {
+    background-color: #449d44 !important;
+    border-color: #398439 !important;
+}
+
+/* Action buttons container */
+.action-buttons {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    margin: 5px 0 !important;
+    justify-content: center !important;
+}
+
+/* Canvassing report table */
+.canvassing-table {
+    width: 100% !important;
+    margin: 20px 0 !important;
+    overflow-x: auto !important;
+    display: block !important;
+    background-color: white !important;
+    border-radius: 5px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+}
+
+.canvassing-table table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+.canvassing-table th,
+.canvassing-table td {
+    padding: 12px 10px !important;
+    text-align: left !important;
+    border: 1px solid #ddd !important;
+}
+
+.canvassing-table th {
+    background-color: #f5f5f5 !important;
+}
+
+/* Fix background and container styles */
+#element.hero-body {
+    background-color: white !important;
+    padding: 0 !important;
+}
+
+.dashboard-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: white !important;
+}
+
+.left-column {
+    flex: 0 0 40% !important;
+    height: 100% !important;
+    background-color: white !important;
+}
+
+.right-column {
+    flex: 0 0 60% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    height: 100% !important;
+    background-color: white !important;
+}
+
+/* NDMC Gallery, Mission, and Objectives styling */
+.thumbnail_gallery {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background-color: white !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border-right: 1px solid #eee !important;
+    height: 100% !important;
+    min-height: 450px !important;
+}
+
+/* Combined box for Mission and Objectives */
+.thumbnail_combined {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background-color: white !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    height: 100% !important;
+    min-height: 450px !important;
+}
+
+/* Gallery header styling */
+.thumbnail_gallery h2,
+.mission-section h2,
+.objectives-section h2 {
+    font-size: 1.5rem !important;
+    color: #333 !important;
+    margin-bottom: 1rem !important;
+    text-align: left !important;
+    border-bottom: 1px solid #eee !important;
+    padding-bottom: 0.75rem !important;
+    width: 100% !important;
+}
+
+/* Sections within combined box */
+.mission-section,
+.objectives-section {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+/* Small divider between Mission and Objectives */
+.section-divider-small {
+    height: 15px !important;
+    width: 100% !important;
+    border-bottom: 1px solid #eee !important;
+    margin-bottom: 15px !important;
+}
+
+/* Space Gallery styling */
+.spacegallery {
+    width: 100% !important;
+    height: 300px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.spacegallery img {
+    position: absolute !important;
+    max-width: 100% !important;
+    border-radius: 5px !important;
+    border: 1px solid #ddd !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    cursor: pointer !important;
+}
+
+/* Read More button styling */
+.read-more {
+    background-color: #0088cc !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 0.5rem 1rem !important;
+    margin-top: 1rem !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+}
+
+.read-more:hover {
+    background-color: #0077b3 !important;
+}
+
+/* Full width wrapper */
+.wrapper {
+    background-color: white !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.home_body {
+    background-color: white !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .dashboard-container {
+        flex-direction: column !important;
+    }
+    
+    .left-column,
+    .right-column {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    
+    .thumbnail_gallery,
+    .thumbnail_combined {
+        margin-bottom: 0 !important;
+        height: auto !important;
+        min-height: auto !important;
+    }
+    
+    .thumbnail_gallery {
+        border-right: none !important;
+        border-bottom: 1px solid #eee !important;
+    }
+    
+    .spacegallery {
+        height: 200px !important;
+    }
+}
+
+/* Make sure all paragraphs in boxes have consistent spacing */
+.thumbnail_gallery p,
+.mission-section p,
+.objectives-section p {
+    margin-bottom: 1rem !important;
+    line-height: 1.5 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+}
+
+/* Fix for tabbed navigation */
+.position-tabs-container {
+    display: block !important;
+    width: 100% !important;
+    clear: both !important;
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid #eee !important;
+    padding-bottom: 15px !important;
+}
+
+/* Ensure proper button placement */
+.button-container {
+    display: block !important;
+    width: 100% !important;
+    clear: both !important;
+    margin: 15px 0 !important;
+}
+
+/* Fix for overlapping elements */
+.clear-fix {
+    clear: both !important;
+    display: block !important;
+    height: 0 !important;
+    line-height: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Year tabs container specific styling */
+.year-tabs-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin-bottom: 20px !important;
+    justify-content: flex-start !important;
+}
+
+/* Specific fix for 4th Year Representative tab */
+.year-tabs-container a:nth-child(4),
+.year-tabs-container a:last-child {
+    clear: none !important;
+    margin-left: 0 !important;
+}
+
+/* Ensure Add Candidates button is below tabs */
+.add-candidates-container {
+    display: block !important;
+    width: 100% !important;
+    clear: both !important;
+    margin-top: 20px !important;
+    padding-top: 5px !important;
+}
+
+/* Fix Excel download button specifically */
+.excel-download-container {
+    display: block !important;
+    width: 100% !important;
+    clear: both !important;
+    margin-top: 15px !important;
+    padding-top: 5px !important;
+    border-top: 1px solid #eee !important;
+}
+
+/* Ensure all action items are visible and clickable */
+.actions-column {
+    white-space: nowrap !important;
+    min-width: 150px !important;
+}
+
+/* Additional fixes for candidate lists */
+.position-header td {
+    background-color: #4a86e8 !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    padding: 12px 15px !important;
+    text-shadow: none !important;
+}
+
+/* Department filter styling */
+.alert-info {
+    margin: 60px 0 15px 0 !important;
+    padding: 15px !important;
+}
+
+/* Welcome message */
+.navbar-form font {
+    margin-right: 10px !important;
+    display: inline-block !important;
+}
+
+/* Table row hover effect */
+.canvassing-table tr:hover td {
+    background-color: #f9f9f9 !important;
+}
+
+/* Improve candidate photo display */
+.pic {
+    border-radius: 3px !important;
+    object-fit: cover !important;
+}
+
+/* Clean up modal styles */
+.modal-header {
+    background-color: #f5f5f5 !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.modal-footer {
+    background-color: #f5f5f5 !important;
+    border-top: 1px solid #e5e5e5 !important;
+}
+
+/* Gallery Modal */
+.modal-body {
+    text-align: center !important;
+    padding: 20px !important;
+}
+
+#galleryCarousel {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+}
+
+#galleryCarousel img {
+    max-width: 100% !important;
+    max-height: 400px !important;
+    margin: 0 auto !important;
+    border-radius: 5px !important;
+}
+
+.carousel-control {
+    background: rgba(0,0,0,0.5) !important;
+    border-radius: 20px !important;
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 25px !important;
+    font-size: 30px !important;
+    text-align: center !important;
+    top: 50% !important;
+    margin-top: -15px !important;
+}
+
+/* Make text responsive for mission and objectives */
+.mission-section p,
+.objectives-section p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+    font-weight: normal !important;
+    text-align: left !important;
+    max-width: 100% !important;
+}
+
+.mission-section p:first-of-type,
+.objectives-section p:first-of-type {
+    font-size: 1rem !important;
+}
+
+.thumbnail_gallery p {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+}
+
+/* Responsive font size adjustments */
+@media (max-width: 1200px) {
+    .mission-section p,
+    .objectives-section p,
+    .thumbnail_gallery p {
+        font-size: 0.95rem !important;
+    }
+    
+    .thumbnail_gallery h2,
+    .mission-section h2,
+    .objectives-section h2 {
+        font-size: 1.4rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .mission-section p,
+    .objectives-section p,
+    .thumbnail_gallery p {
+        font-size: 0.9rem !important;
+    }
+    
+    .thumbnail_gallery h2,
+    .mission-section h2,
+    .objectives-section h2 {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .mission-section p,
+    .objectives-section p,
+    .thumbnail_gallery p {
+        font-size: 1rem !important;
+    }
+    
+    .thumbnail_gallery h2,
+    .mission-section h2,
+    .objectives-section h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Fix specifically for text that wasn't zooming */
+.responsive-text {
+    font-size: 16px !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    transform: scale(1) !important;
+    transform-origin: left top !important;
+    zoom: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-text-size-adjust: 100% !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    text-rendering: optimizeLegibility !important;
+    max-width: 100% !important;
+}
+
+html {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+}
+
+/* Ensure font zooming works properly in all browsers */
+body {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+}
+
+/* Make all text use relative sizing */
+.mission-section *, 
+.objectives-section * {
+    max-width: 100% !important;
+    transform: none !important;
+    zoom: normal !important;
+}
+
+/* Make text responsive to browser zoom */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .responsive-text {
+        -webkit-text-size-adjust: 100% !important;
+    }
+}
+
+@-moz-document url-prefix() {
+    .responsive-text {
+        font-size: 16px !important;
+        font-size: 1rem !important;
+    }
+}
+
+.thumbnail_combined {
+    zoom: 100% !important;
+    transform: scale(1) !important;
+}
+
+/* Override any potential fixed sizing */
+.responsive-text.responsive-text {
+    font-size: 16px !important;
+    font-size: 1rem !important;
+}
+
+/* Table styling for Mission and Objectives */
+.mission-table,
+.objectives-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.mission-table td,
+.objectives-table td {
+    padding: 0 0 10px 0 !important;
+    vertical-align: top !important;
+    text-align: left !important;
+    border: none !important;
+}
+
+.mission-table tr:last-child td,
+.objectives-table tr:last-child td {
+    padding-top: 10px !important;
+}
+
+.mission-table h2,
+.objectives-table h2 {
+    font-size: 1.5rem !important;
+    color: #333 !important;
+    margin: 0 0 15px 0 !important;
+    padding-bottom: 10px !important;
+    border-bottom: 1px solid #eee !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.mission-table p,
+.objectives-table p {
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.mission-table .read-more,
+.objectives-table .read-more {
+    display: inline-block !important;
+    margin: 5px 0 0 0 !important;
+    text-align: center !important;
+}
+
+/* Override previous styling to ensure tables work properly */
+.thumbnail_combined {
+    padding: 20px !important;
+}
+
+@media (max-width: 767px) {
+    .mission-table h2,
+    .objectives-table h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    .mission-table td,
+    .objectives-table td {
+        padding: 0 0 8px 0 !important;
+    }
+    
+    .mission-table tr:last-child td,
+    .objectives-table tr:last-child td {
+        padding-top: 8px !important;
+    }
+}
+
+/* For the voter tabs specifically */
+a.btn-primary,
+a.btn-success,
+a.btn-info,
+.all-voters,
+.voted-voters,
+.unvoted-voters,
+.add-voters {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-color: #3d8b40 !important;
+    text-decoration: none !important;
+    padding: 10px 15px !important;
+}
+
+/* Fix hover state for these buttons */
+a.btn-primary:hover,
+a.btn-success:hover,
+a.btn-info:hover,
+.all-voters:hover,
+.voted-voters:hover,
+.unvoted-voters:hover,
+.add-voters:hover {
+    background-color: #3d8b40 !important;
+    border-color: #2d682f !important;
+}
+
+/* Top right back button styling */
+.top-buttons-container {
+    position: absolute !important;
+    top: 10px !important;
+    right: 15px !important;
+    z-index: 100 !important;
+}
+
+.top-back-button {
+    display: inline-block !important;
+    background-color: #4CAF50 !important;
+    color: white !important;
+    padding: 8px 15px !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    border: 1px solid #3d8b40 !important;
+    transition: all 0.3s ease !important;
+    font-weight: bold !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    font-size: 14px !important;
+}
+
+.top-back-button:hover {
+    background-color: #3d8b40 !important;
+    color: white !important;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2) !important;
+}
+
+.top-back-button i {
+    margin-right: 5px !important;
+}
+
+/* Make back button responsive */
+@media (max-width: 767px) {
+    .top-buttons-container {
+        position: fixed !important;
+        top: 70px !important;
+        right: 10px !important;
+        z-index: 1000 !important;
+    }
+    
+    .top-back-button {
+        padding: 8px 12px !important;
+        font-size: 14px !important;
+    }
+}
+
+/* Fixed back button that's always visible */
+#fixed-back-button {
+    position: fixed !important;
+    top: 75px !important;
+    right: 15px !important;
+    z-index: 9999 !important; /* Extremely high z-index to ensure visibility */
+}
+
+#fixed-back-button a {
+    display: block !important;
+    background-color: #4CAF50 !important;
+    color: white !important;
+    padding: 12px 20px !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    border: 2px solid #fff !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+    text-transform: uppercase !important;
+}
+
+#fixed-back-button a:hover {
+    background-color: #3d8b40 !important;
+    transform: scale(1.05) !important;
+}
+
+#fixed-back-button i {
+    margin-right: 5px !important;
+}
+
+/* Inline back button as a backup */
+.inline-back-button {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    text-align: right !important;
+}
+
+.prominent-back-btn {
+    display: inline-block !important;
+    background-color: #4CAF50 !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    border: 2px solid #3d8b40 !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2) !important;
+}
+
+.prominent-back-btn:hover {
+    background-color: #3d8b40 !important;
+    color: white !important;
+}
+
+.prominent-back-btn i {
+    margin-right: 5px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    #fixed-back-button {
+        top: 60px !important;
+        right: 10px !important;
+    }
+    
+    #fixed-back-button a {
+        padding: 10px 15px !important;
+        font-size: 14px !important;
+    }
+    
+    .inline-back-button {
+        text-align: center !important;
+    }
+    
+    .prominent-back-btn {
+        width: 80% !important;
+        max-width: 250px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+} 

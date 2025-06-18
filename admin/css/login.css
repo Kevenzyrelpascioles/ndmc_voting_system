@@ -1,0 +1,143 @@
+/* Admin Login Page Specific Styling */
+
+body {
+    background-color: #f4f4f4;
+    background-image: url('../images/NdmcBuilding.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Login container */
+#element.hero-body-index {
+    background-color: rgba(89, 238, 89, 0.3) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    padding: 25px !important;
+    margin-top: 100px !important;
+    max-width: 350px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    backdrop-filter: blur(5px);
+}
+
+/* Login header */
+.login-header h2 {
+    color: black !important;
+    text-align: center !important;
+    margin-bottom: 25px !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+/* Login form inputs */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 10px !important;
+    margin-bottom: 20px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    font-size: 16px !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    outline: none !important;
+    border-color: #4CAF50 !important;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6) !important;
+}
+
+/* Login form labels */
+.login-form label {
+    display: block !important;
+    color: black !important;
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+    font-size: 16px !important;
+}
+
+/* Login button */
+.login-form .btn-success,
+.login-form button[name="Login"] {
+    background-color: #4CAF50 !important;
+    background-image: none !important;
+    color: white !important;
+    border: 1px solid #3d8b40 !important;
+    padding: 12px !important;
+    font-weight: bold !important;
+    text-shadow: none !important;
+    border-radius: 4px !important;
+    width: 100% !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+    margin-top: 10px !important;
+}
+
+.login-form .btn-success:hover,
+.login-form button[name="Login"]:hover {
+    background-color: #3d8b40 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form .btn-success:active,
+.login-form button[name="Login"]:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Error alerts */
+.alert-error {
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+    color: #721c24 !important;
+    padding: 10px !important;
+    margin-top: 15px !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    #element.hero-body-index {
+        width: 90% !important;
+        padding: 15px !important;
+        margin-top: 70px !important;
+    }
+    
+    .login-header h2 {
+        font-size: 20px !important;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        padding: 8px !important;
+    }
+    
+    .login-form .btn-success,
+    .login-form button[name="Login"] {
+        padding: 10px !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #element.hero-body-index {
+        width: 85% !important;
+        padding: 20px !important;
+    }
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 40px !important;
+}
+
+.footer p {
+    color: white !important;
+    text-align: center !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+} 
